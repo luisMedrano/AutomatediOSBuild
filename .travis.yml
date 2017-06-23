@@ -1,8 +1,8 @@
 language: swift
-osx_image: xcode8.3.3
-xcode_project: AutomatediOSBuild.xcodeproj #3
+osx_image: xcode8.3
+xcode_project: AutomatediOSBuild.xcodeproj 
 xcode_scheme: Debug
 #xcode_sdk: iphonesimulator10.0
 script:
-  - xcodebuild -scheme AutomatediOSBuild -project AutomatediOSBuild.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=9.1' build test
+  - xcodebuild -scheme AutomatediOSBuild -project AutomatediOSBuild.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6s,OS=10.3' build test
 
