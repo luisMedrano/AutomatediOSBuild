@@ -16,8 +16,6 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        bla
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.leftBarButtonItem = editButtonItem
 
@@ -37,6 +35,15 @@ class MasterViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func charInString(str:String) -> Int {
+        
+        if !str.isEmpty{
+            let countChar:Int = str.characters.count
+            return countChar
+        }
+        return 0
     }
 
     func insertNewObject(_ sender: Any) {
